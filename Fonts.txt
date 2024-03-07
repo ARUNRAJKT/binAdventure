@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Cairo
+Author: Mohamed Gaber,Multiple Designers
+Url: https://fonts.google.com/specimen/Cairo
+
+Font: Poppins
+Author: Indian Type Foundry,Jonny Pinhorn
+Url: https://fonts.google.com/specimen/Poppins
