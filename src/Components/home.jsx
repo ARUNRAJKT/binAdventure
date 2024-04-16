@@ -16,7 +16,7 @@ export default function Home() {
           <img src={backgroundImage2} alt='image2' class="grass" />
           <img src={backgroundImage1} alt='image3' class="waterfall" />
           <img src={backgroundImage4} alt='image4' class="hero" />
-          <h1 class="title">Welcome!</h1>
+          <h2 class="title">lets trip</h2>
 
         </header>
         <section id='intro' className="intro-section">
