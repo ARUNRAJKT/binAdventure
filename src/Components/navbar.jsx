@@ -27,10 +27,7 @@ export default function Navbar() {
                             {item.title}
                             </Link>
                     </li>
-                )
-                )}
-            
-               
+                ))}   
             </ul>
         </nav>
     )
