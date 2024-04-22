@@ -16,29 +16,41 @@ export default function Home() {
           <img src={backgroundImage2} alt='image2' class="grass" />
           <img src={backgroundImage1} alt='image3' class="waterfall" />
           <img src={backgroundImage4} alt='image4' class="hero" />
-          <h2 class="title">lets trip</h2>
-
+          <h2 class="title">Its time for Trekking</h2>
         </header>
+
+
+
+
+
         <section id='intro' className="intro-section">
-          <div className="intro-content">
-            <h2>Welcome to Bin Adventures</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
-            <div className="milestones">
-              <div className="milestone">
-                <span>3 Years</span>
-                <p>Experience</p>
-              </div>
-              <div className="milestone">
-                <span>129+</span>
-                <p>Treks</p>
-              </div>
-              <div className="milestone">
-                <span>300+</span>
-                <p>Happy Adventurers</p>
+          <div className='about-wrapper'>
+            <div className='about-image'>
+            </div>
+            <div className="intro-content">
+              <h2>Welcome to Bin Adventures</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+              <div className="milestones">
+                <div className="milestone">
+                  <span>3 Years</span>
+                  <p>Experience</p>
+                </div>
+                <div className="milestone">
+                  <span>129+</span>
+                  <p>Treks</p>
+                </div>
+                <div className="milestone">
+                  <span>300+</span>
+                  <p>Happy Adventurers</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
+
+
+
 
         <section className="featured-section">
           <h2> Treks & Destinations</h2>

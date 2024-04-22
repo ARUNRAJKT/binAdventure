@@ -1,4 +1,5 @@
 .wrapper {
+  position: relative;
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
@@ -26,6 +27,7 @@ header {
 .waterfall {
   transform: translateZ(-5px) scale(1.5);
 }
+
 .hero {
   transform: translateZ(-1.7px) scale(1.2);
 }
@@ -47,33 +49,48 @@ header {
   position: absolute;
   text-shadow: 0 0 10px black;
 }
+
 #intro {
 
   text-align: center;
   padding: 7rem;
-  background-color: #ffffff;
+  background-image: url("../assests/Background/secondbackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: rgb(0, 0, 0);
   height: 71vh;
 }
+
+
 .intro-section {
-  background-color: #f9f9f9;
-  padding: 50px 0;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-image {
+  background-image: url("https://img.traveltriangle.com/blog/wp-content/uploads/2019/11/Treks-In-The-World-cover_18th-Nov.jpg");
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .intro-content {
-  max-width: 800px;
-  margin: 0 auto;
-  
+  width: 50%;
+  margin: 0 auto auto 4%;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+
 }
 
-.intro-content h2 {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
-}
+
 
 .intro-content p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 30px;
 }
@@ -81,22 +98,32 @@ header {
 .milestones {
   display: flex;
   justify-content: center;
+  background-color: #0056b3;
+  align-content: center;
+  background: rgba(20, 79, 23, 0.362);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 1);
+
 }
 
+
 .milestone {
-  flex: 1;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
 }
 
 .milestone span {
-  font-size: 28px;
-  font-weight: bold;
+  display: inline-block;
+  /* margin: 10px;  */
 }
 
+
 .milestone p {
-  font-size: 16px;
+  font-size: 12px;
   color: #777;
-  margin-top: 5px;
+
 }
 
 
@@ -121,17 +148,36 @@ header {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
+
 }
 
 .trek-card img {
-    transition: transform 1s, filter 2s ease-in-out;
-    height: 350px;
-    transform: scale(1.2);
-    
+  transition: transform 1s, filter 2s ease-in-out;
+  height: 350px;
+  transform: scale(1.2);
+
+}
+
+/* ------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1713780163 svg {
+    width: calc(101% + 1.3px);
+    height: 24px;
   }
-  
-  /* The Transformation */
+}
+
+/* The Transformation */
 /* .trek-card img:hover  {
   filter: blur(2px);
 
@@ -230,6 +276,16 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /*---------------------------------------------------------------------------------------------*/
 
 
@@ -237,7 +293,7 @@ header {
 
 
 
-@media screen and (max-width:850px){
+@media screen and (max-width:850px) {
   header {
     position: relative;
     display: flex;
@@ -248,22 +304,23 @@ header {
     transform-style: preserve-3d;
     z-index: -1;
   }
-  
+
   .hill {
     transform: translateZ(-20px) scale(3);
   }
-  
+
   .grass {
     transform: translateZ(-10px) scale(2);
   }
-  
+
   .waterfall {
     transform: translateZ(-5px) scale(1.5);
   }
+
   .hero {
     transform: translateZ(-1.7px) scale(1.2);
   }
-  
+
   .grass,
   .hero,
   .hill,
@@ -274,7 +331,7 @@ header {
     object-fit: cover;
     z-index: -1;
   }
-  
+
   .title {
     font-size: 2rem;
     color: white;
@@ -283,7 +340,7 @@ header {
     margin-top: -28%;
     text-shadow: 0 0 10px black;
   }
-  
+
   #intro {
     font-size: 16px;
     text-align: center;
@@ -292,47 +349,53 @@ header {
     color: rgb(0, 0, 0);
     /* height: 100vh; */
   }
+
   .intro-section {
     background-color: #f9f9f9;
     padding: 50px 0;
     text-align: center;
   }
-  
+
   .intro-content {
     max-width: 800px;
     margin: 0 auto;
   }
-  
+
   .intro-content h2 {
     font-size: 23px;
     margin-bottom: 20px;
   }
-  
+
   .intro-content p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 30px;
   }
-  
+
+  .about-image {
+    display: none;
+
+  }
+
   .milestones {
     display: flex;
     justify-content: center;
   }
-  
+
   .milestone {
     flex: 1;
     padding: 20px;
   }
-  
+
   .milestone span {
     font-size: 20px;
     font-weight: bold;
   }
-  
+
   .milestone p {
     font-size: 16px;
     color: #777;
     margin-top: 5px;
   }
-  
+
 }
