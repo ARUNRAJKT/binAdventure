@@ -16,7 +16,7 @@ export default function Home() {
           <img src={backgroundImage2} alt='image2' class="grass" />
           <img src={backgroundImage1} alt='image3' class="waterfall" />
           <img src={backgroundImage4} alt='image4' class="hero" />
-          <h2 class="title">Its time for Trekking</h2>
+          <h2 class="title">hi anjana</h2>
         </header>
 
 
