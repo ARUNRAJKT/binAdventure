@@ -47,6 +47,8 @@ header {
   font-size: 7rem;
   color: white;
   position: absolute;
+  top: 14%;
+  left: 10%;
   text-shadow: 0 0 10px black;
 }
 
@@ -348,11 +350,11 @@ animation: spinner-pl92zb 1s infinite linear;
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: white;
     position: absolute;
-    margin-left: 46%;
-    margin-top: -28%;
+    margin-left: 53%;
+    margin-top: 10%;
     text-shadow: 0 0 10px black;
   }
 

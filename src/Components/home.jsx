@@ -5,7 +5,7 @@ import backgroundImage1 from '../assests/Background/backround1.png';
 import backgroundImage2 from '../assests/Background/backround2.png';
 import backgroundImage3 from '../assests/Background/backround3.png';
 import backgroundImage4 from '../assests/Background/background4.png';
-;
+
 export default function Home() {
 
  

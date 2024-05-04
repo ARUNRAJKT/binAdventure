@@ -8,7 +8,7 @@ export default function MainPage() {
     useEffect(()=>{
       setTimeout(()=>{
         setLoading(false);
-      },5000)
+      },4200)
     },[])
     if(isLoading){
         return<Loader/>
