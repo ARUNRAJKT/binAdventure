@@ -13,6 +13,7 @@ svg text {
 	stroke-width: 2;
 	stroke: #116B0E;
 	font-size: 6vw;
+	height: "100vh"
 	/* Responsive font size */
 }
 
