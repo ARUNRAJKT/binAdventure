@@ -23,4 +23,16 @@ svg text {
 	}
 }
 
-.wrapper {background-color: #FFFFFF};
+
+@media screen and (max-width:850px) {
+	
+	svg text {
+		animation: stroke 5s infinite alternate;
+		stroke-width: 2;
+		stroke: #116B0E;
+		font-size: 44px;
+		
+	}
+	
+
+}
