@@ -5,11 +5,12 @@ import backgroundImage1 from '../assests/Background/backround1.png';
 import backgroundImage2 from '../assests/Background/backround2.png';
 import backgroundImage3 from '../assests/Background/backround3.png';
 import backgroundImage4 from '../assests/Background/background4.png';
+;
 export default function Home() {
+
+ 
   return (
     <div className='home'>
-
-
       <div class="wrapper">
         <header>
           <img src={backgroundImage3} alt='image1' class="hill" />
@@ -18,10 +19,6 @@ export default function Home() {
           <img src={backgroundImage4} alt='image4' class="hero" />
           <h2 class="title">LETS TREAKK</h2>
         </header>
-
-
-
-
 
         <section id='intro' className="intro-section">
           <div className='about-wrapper'>
@@ -47,10 +44,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-
-
-
 
         <section className="featured-section">
           <h2> Treks & Destinations</h2>
@@ -78,8 +71,6 @@ export default function Home() {
 
             </div>
 
-
-            {/* Add more featured trek cards as needed */}
           </div>
         </section>
 
@@ -133,49 +124,6 @@ export default function Home() {
 
 
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {/* <Parallax pages={2} style={{ top: '0', left: '0' }} className="animation">
-        <Layer offset={0} speed={1}>
-          <div className='animation_layer layer1' style={{ backgroundImage: `url(${backgroundImage3})` }}></div>
-        </Layer>
-        <Layer offset={0} speed={2.5}>
-          <div className='animation_layer layer2' style={{ backgroundImage: `url(${backgroundImage2})` }}>
-          </div>
-        </Layer>
-        <Layer offset={0} speed={3.5}>
-          <div className='animation_layer layer3' style={{ backgroundImage: `url(${backgroundImage1})` }}>
-
-
-
-          </div>
-         
-        </Layer>
-       
-      </Parallax>
-      <div> djuhsfbsdjklhf</div> */}
-
     </div>
 
   );
