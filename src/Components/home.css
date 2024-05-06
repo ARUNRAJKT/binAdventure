@@ -173,6 +173,62 @@ animation: spinner-pl92zb 1s infinite linear;
 
 }
 
+.customer-reviews {
+  text-align: center;
+  padding: 20px;
+}
+
+.customer-reviews h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.review {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.review-content {
+  font-style: italic;
+}
+
+.review-author {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.photos {
+  text-align: center;
+  padding: 20px;
+}
+
+.photos h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.photo {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover img {
+  transform: scale(1.05);
+}
 
 /* for desktop */
 .whatsapp{

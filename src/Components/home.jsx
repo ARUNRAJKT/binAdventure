@@ -92,15 +92,53 @@ export default function Home() {
           {/* Add information about your adventure company here */}
         </section>
 
-        {/* Customer Reviews/Testimonials */}
-        <section className="customer-reviews">
-          {/* Add compilation of reviews and testimonials here */}
-        </section>
 
-        {/* FAQs */}
-        <section className="faqs">
-          {/* Add frequently asked questions and information here */}
-        </section>
+
+        
+        <section class="photos">
+  <h2>Photo Gallery</h2>
+  <div class="photo-grid">
+    <div class="photo">
+      <img src="trek1.jpg" alt="Trekking Photo 1"/>
+    </div>
+    <div class="photo">
+      <img src="trek2.jpg" alt="Trekking Photo 2"/>
+    </div>
+    <div class="photo">
+      <img src="trek3.jpg" alt="Trekking Photo 3"/>
+    </div>
+    <div class="photo">
+      <img src="trek3.jpg" alt="Trekking Photo 3"/>
+    </div>
+    <div class="photo">
+      <img src="trek3.jpg" alt="Trekking Photo 3"/>
+    </div>
+    
+  </div>
+</section>
+
+
+        {/* Customer Reviews/Testimonials */}
+        <section class="customer-reviews">
+  <h2>Customer Reviews</h2>
+  <div class="review">
+    <div class="review-content">
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+      <span class="review-author">- John Doe</span>
+    </div>
+  </div>
+  <div class="review">
+    <div class="review-content">
+      <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+      <span class="review-author">- Jane Smith</span>
+    </div>
+  </div>
+ 
+</section>
+
+
+
+
 
         <footer className="footer">
           <div className="footer-links">
