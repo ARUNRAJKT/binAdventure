@@ -3,7 +3,7 @@ import './loader.css'
 export default function loader() {
   return (
     <>
-
+<div style={{backgroundColor:"#01321a",paddingBottom:"31.2vh"}}>
 <div className="scene">
   <div className="forest">
     <div className="tree tree1">
@@ -99,7 +99,7 @@ export default function loader() {
     </div>
   </div>
   
-  {/* <div className="time-wrapper">
+  <div className="time-wrapper">
     <div className="time">
       <div className="day"></div>
       <div className="night">
@@ -113,7 +113,7 @@ export default function loader() {
         <div className="star star7"></div>
       </div>
     </div>
-  </div> */}
+  </div>
 </div>
 
     <svg >
@@ -122,6 +122,7 @@ export default function loader() {
     </text>
    
 </svg>
+</div>
 </>
   )
 }

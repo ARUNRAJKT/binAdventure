@@ -224,14 +224,7 @@ animation: spinner-pl92zb 1s infinite linear;
 
 /* for mobile */
 
-  .whatsapp {
-      margin-top: 10px;
-      width: 40px;
-      height: 40px;
-      bottom: 20px;
-      right: 10px;
-      font-size: 22px;
-  }
+  
 
 .trek-details {
   padding: 20px;
@@ -437,7 +430,14 @@ animation: spinner-pl92zb 1s infinite linear;
     font-size: 20px;
     font-weight: bold;
   }
-
+  .whatsapp {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+}
   .milestone p {
     font-size: 16px;
     color: #777;

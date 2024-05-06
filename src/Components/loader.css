@@ -34,12 +34,12 @@ svg {
 
 @keyframes sunrise {
 
-	0%,
-	10%,
+	/* 0%, */
+	/* 10%,
 	90%,
 	100% {
 		box-shadow: 0 0 0 25px #5ad6bd, 0 0 0 40px #4acead, 0 0 0 60px rgba(74, 206, 173, 0.6), 0 0 0 90px rgba(74, 206, 173, 0.3);
-	}
+	} */
 
 	25%,
 	75% {
@@ -361,15 +361,6 @@ svg {
 	border-top-right-radius: 6px;
 	transform: skew(30deg);
 	box-shadow: inset -3px 3px 0px 0px #F7B563;
-	/*background: linear-gradient(
-	  to bottom, 
-	  rgba(246,212,132,1) 0%,
-	  rgba(246,212,132,1) 24%,
-	  rgba(#F0B656,1) 25%,
-	  rgba(#F0B656,1) 74%,
-	  rgba(235,151,53,1) 75%,
-	  rgba(235,151,53,1) 100%
-	);*/
 	background: #f6d484;
 }
 
@@ -856,7 +847,7 @@ svg text {
 @keyframes stroke {
 	0% {
 		fill: rgba(32, 90, 11, 0);
-		stroke:  #0e7902;
+		stroke:  #ffffff;
 		stroke-dashoffset: 25%;
 		stroke-dasharray: 0 50%;
 		stroke-width: 2;
@@ -864,17 +855,17 @@ svg text {
 
 	70% {
 		fill: rgba(32, 90, 11, 0);
-		stroke:  #0e7902;
+		stroke:  #ffffff;
 	}
 
 	80% {
 		fill: rgba(32, 90, 11, 0);
-		stroke: #0e7902;
+		stroke:  #ffffff;
 		stroke-width: 3;
 	}
 
 	100% {
-		fill:  #0b5b02;
+		fill:   #ffffff;
 		stroke: rgba(17, 107, 14, 0);
 		stroke-dashoffset: -25%;
 		stroke-dasharray: 50% 0;
