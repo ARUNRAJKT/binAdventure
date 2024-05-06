@@ -5,11 +5,12 @@ import backgroundImage1 from '../assests/Background/backround1.png';
 import backgroundImage2 from '../assests/Background/backround2.png';
 import backgroundImage3 from '../assests/Background/backround3.png';
 import backgroundImage4 from '../assests/Background/background4.png';
+import  WhatsApp  from '../assests/icons/whatsapp.png';
 
 export default function Home() {
 
- 
-  return (
+
+  return (<>
     <div className='home'>
       <div class="wrapper">
         <header>
@@ -17,7 +18,15 @@ export default function Home() {
           <img src={backgroundImage2} alt='image2' class="grass" />
           <img src={backgroundImage1} alt='image3' class="waterfall" />
           <img src={backgroundImage4} alt='image4' class="hero" />
-          <h2 class="title">LETS TREAKK</h2>
+          <div style={{width:"40%",marginLeft:"-40%",marginTop:"-3%"}}>
+            <h1 className='title'>Travel Experience with a positive impact</h1>
+            <p>Embark on a journey through breathtaking landscapes, conquer rugged terrains,
+              and immerse yourself in the serenity of nature. Trekking offers not just physical challenges,
+              but also moments of profound connection with the world around us. Whether it's the crisp mountain air,
+              the rustling of leaves in dense forests, or the majestic vistas that await at the summit,
+              every step of the trek is a step closer to discovering the beauty of our planet.</p>
+
+          </div>
         </header>
 
         <section id='intro' className="intro-section">
@@ -125,6 +134,13 @@ export default function Home() {
 
       </div>
     </div>
-
+    <a
+        href="https://wa.me"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img alt='whatsapp icon'  className="whatsapp" src={WhatsApp}/>
+      </a>
+    </>
   );
 }

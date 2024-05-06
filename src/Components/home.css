@@ -44,11 +44,9 @@ header {
 }
 
 .title {
-  font-size: 7rem;
+  font-size: 1.6rem;
   color: white;
-  position: absolute;
-  top: 14%;
-  left: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: 0 0 10px black;
 }
 
@@ -175,6 +173,27 @@ animation: spinner-pl92zb 1s infinite linear;
 
 }
 
+
+/* for desktop */
+.whatsapp{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 70px;
+  background-color: #105d11cd;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 0 14.5px -1px #000000;
+  z-index: 100;
+  background-image: url("../assests/icons/whatsapp.png");
+}
+
+
+
+
 /* ------------------------------------------------------------- */
 
 
@@ -195,14 +214,24 @@ animation: spinner-pl92zb 1s infinite linear;
 }
 
 /* The Transformation */
-/* .trek-card img:hover  {
+.trek-card img:hover  {
   filter: blur(2px);
 
 
     transform: scale(1);
  
-  } */
+  }
 
+/* for mobile */
+
+  .whatsapp {
+      margin-top: 10px;
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px;
+  }
 
 .trek-details {
   padding: 20px;
