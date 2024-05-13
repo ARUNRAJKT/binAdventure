@@ -5,27 +5,26 @@ import backgroundImage1 from '../assests/Background/backround1.png';
 import backgroundImage2 from '../assests/Background/backround2.png';
 import backgroundImage3 from '../assests/Background/backround3.png';
 import backgroundImage4 from '../assests/Background/background4.png';
-import  WhatsApp  from '../assests/icons/whatsapp.png';
+import WhatsApp from '../assests/icons/whatsapp.png';
 
 export default function Home() {
 
 
   return (<>
     <div className='home'>
-      <div class="wrapper">
+      <div className="wrapper">
         <header>
-          <img src={backgroundImage3} alt='image1' class="hill" />
-          <img src={backgroundImage2} alt='image2' class="grass" />
-          <img src={backgroundImage1} alt='image3' class="waterfall" />
-          <img src={backgroundImage4} alt='image4' class="hero" />
-          <div style={{width:"40%",marginLeft:"-40%",marginTop:"-3%"}}>
-            <h1 className='title'>Travel Experience with a positive impact</h1>
-            <p>Embark on a journey through breathtaking landscapes, conquer rugged terrains,
+          <img src={backgroundImage3} alt='image1' className="hill" />
+          <img src={backgroundImage2} alt='image2' className="grass" />
+          <img src={backgroundImage1} alt='image3' className="waterfall" />
+          <img src={backgroundImage4} alt='image4' className="hero" />
+          <div style={{ width: "40%", marginLeft: "-40%", marginTop: "-6%" }}>
+            <h1 className='title'>Travel Experience with a positive impact . . .</h1>
+            <p className='subPara'>Embark on a journey through breathtaking landscapes, conquer rugged terrains,
               and immerse yourself in the serenity of nature. Trekking offers not just physical challenges,
               but also moments of profound connection with the world around us. Whether it's the crisp mountain air,
               the rustling of leaves in dense forests, or the majestic vistas that await at the summit,
               every step of the trek is a step closer to discovering the beauty of our planet.</p>
-
           </div>
         </header>
 
@@ -53,33 +52,151 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <section className="featured-section">
-          <h2> Treks & Destinations</h2>
-          <div className="featured-treks">
-            {/* Featured Trek/Destination Cards */}
-            <div className="trek-card">
-              <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHJla2tpbmd8ZW58MHx8MHx8fDA%3D" alt="Featured Trek 1" />
-              <div className="trek-details">
-                {/* <h3>Bramagiri</h3> */}
+          <h2 className='trek_title'> Treks & Destinations</h2>
+          <div style={{padding:"4%", display:"flex", justifyContent:"space-between", flexWrap: "wrap"}}>
+            <div className="card">
+              <img
+                className="card__background"
+                src="https://media2.thrillophilia.com/images/photos/000/035/746/original/chokra11.jpg?width=1600&height=775"
+                // src="https://i.imgur.com/QYWAcXk.jpeg"
+                alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                width="1920"
+                height="2193"
+              />
+              <div className="card__content | flow">
+                <div className="card__content--container | flow">
+                  <h2 className="card__title">Chokramudi</h2>
+                  <p className="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                    labore laudantium deserunt fugiat numquam.
+                  </p>
+                </div>
+                <button className="card__button">Read more</button>
               </div>
-            </div>
-
-            <div className="trek-card">
-              <img src="https://www.shutterstock.com/image-photo/group-four-hikers-backpacks-walks-260nw-1909533559.jpg" alt="Featured Trek 2" />
-              {/* <div className="trek-details">
-       
-      </div> */}
-            </div>
-            <div className="trek-card">
-              <img src="https://www.shutterstock.com/image-photo/group-four-hikers-backpacks-walks-260nw-1909533559.jpg" alt="Featured Trek 2" />
 
             </div>
-            <div className="trek-card">
-              <img src="https://www.shutterstock.com/image-photo/group-four-hikers-backpacks-walks-260nw-1909533559.jpg" alt="Featured Trek 2" />
+           
+            <div className="card">
+              <img
+                className="card__background"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLbRUpYsuN4D-6F3fETvKgXhscFCBRVYH3eeVUz_g-g&s"
+                alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                width="1920"
+                height="2193"
+              />
+              <div className="card__content | flow">
+                <div className="card__content--container | flow">
+                  <h2 className="card__title">Nethravathi</h2>
+                  <p className="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                    labore laudantium deserunt fugiat numquam.
+                  </p>
+                </div>
+                <button className="card__button">Read more</button>
+              </div>
 
             </div>
+            <div className="card">
+              <img
+                className="card__background"
+                src="https://miro.medium.com/v2/resize:fit:960/1*qrTIa_bv1UKf1zvp_o1weA.jpeg"
+                alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                width="1920"
+                height="2193"
+              />
+              <div className="card__content | flow">
+                <div className="card__content--container | flow">
+                  <h2 className="card__title">Kudremukh</h2>
+                  <p className="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                    labore laudantium deserunt fugiat numquam.
+                  </p>
+                </div>
+                <button className="card__button">Read more</button>
+              </div>
 
+            </div>
+            <div className="card">
+              <img
+                className="card__background"
+                src="https://nomadsofindia.com/wp-content/uploads/2023/06/Kumara-Parvatha-Trek-1024x683.jpg"
+                alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                width="1920"
+                height="2193"
+              />
+              <div className="card__content | flow">
+                <div className="card__content--container | flow">
+                  <h2 className="card__title">Kumara Parvatha</h2>
+                  <p className="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                    labore laudantium deserunt fugiat numquam.
+                  </p>
+                </div>
+                <button className="card__button">Read more</button>
+              </div>
+
+            </div>
+            <div className="card">
+              <img
+                className="card__background"
+                src="https://cdn.tripuntold.com/media/photos/location/2018/10/03/33120f29-ddc3-4175-8e0a-5c16570aabbb.jpg"
+                alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                width="1920"
+                height="2193"
+              />
+              <div className="card__content | flow">
+                <div className="card__content--container | flow">
+                  <h2 className="card__title">Brahmagiri</h2>
+                  <p className="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                    labore laudantium deserunt fugiat numquam.
+                  </p>
+                </div>
+                <button className="card__button">Read more</button>
+              </div>
+
+            </div>
+            <div className="card">
+              <img
+                className="card__background"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBaSUjz_I9ShO5kSoNBZmZH_owZKkQDUHX653_IpeujA&s"
+                alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                width="1920"
+                height="2193"
+              />
+              <div className="card__content | flow">
+                <div className="card__content--container | flow">
+                  <h2 className="card__title">Banasura</h2>
+                  <p className="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                    labore laudantium deserunt fugiat numquam.
+                  </p>
+                </div>
+                <button className="card__button">Read more</button>
+              </div>
+
+            </div>
+            <div className="card">
+              <img
+                className="card__background"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzBh3gJEAsMzR2YFbHJWFV9jh3dUZ9zB9OgtiG0ceJPw&s"
+                alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                width="1920"
+                height="2193"
+              />
+              <div className="card__content | flow">
+                <div className="card__content--container | flow">
+                  <h2 className="card__title">Harihar</h2>
+                  <p className="card__description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
+                    labore laudantium deserunt fugiat numquam.
+                  </p>
+                </div>
+                <button className="card__button">Read more</button>
+              </div>
+
+            </div>
           </div>
         </section>
 
@@ -94,47 +211,47 @@ export default function Home() {
 
 
 
-        
-        <section class="photos">
-  <h2>Photo Gallery</h2>
-  <div class="photo-grid">
-    <div class="photo">
-      <img src="trek1.jpg" alt="Trekking Photo 1"/>
-    </div>
-    <div class="photo">
-      <img src="trek2.jpg" alt="Trekking Photo 2"/>
-    </div>
-    <div class="photo">
-      <img src="trek3.jpg" alt="Trekking Photo 3"/>
-    </div>
-    <div class="photo">
-      <img src="trek3.jpg" alt="Trekking Photo 3"/>
-    </div>
-    <div class="photo">
-      <img src="trek3.jpg" alt="Trekking Photo 3"/>
-    </div>
-    
-  </div>
-</section>
+
+        <section className="photos">
+          <h2>Photo Gallery</h2>
+          <div className="photo-grid">
+            <div className="photo">
+              <img src="trek1.jpg" alt="Trekking Photo 1" />
+            </div>
+            <div className="photo">
+              <img src="trek2.jpg" alt="Trekking Photo 2" />
+            </div>
+            <div className="photo">
+              <img src="trek3.jpg" alt="Trekking Photo 3" />
+            </div>
+            <div className="photo">
+              <img src="trek3.jpg" alt="Trekking Photo 3" />
+            </div>
+            <div className="photo">
+              <img src="trek3.jpg" alt="Trekking Photo 3" />
+            </div>
+
+          </div>
+        </section>
 
 
         {/* Customer Reviews/Testimonials */}
-        <section class="customer-reviews">
-  <h2>Customer Reviews</h2>
-  <div class="review">
-    <div class="review-content">
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-      <span class="review-author">- John Doe</span>
-    </div>
-  </div>
-  <div class="review">
-    <div class="review-content">
-      <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-      <span class="review-author">- Jane Smith</span>
-    </div>
-  </div>
- 
-</section>
+        <section className="customer-reviews">
+          <h2>Customer Reviews</h2>
+          <div className="review">
+            <div className="review-content">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+              <span className="review-author">- John Doe</span>
+            </div>
+          </div>
+          <div className="review">
+            <div className="review-content">
+              <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+              <span className="review-author">- Jane Smith</span>
+            </div>
+          </div>
+
+        </section>
 
 
 
@@ -173,12 +290,12 @@ export default function Home() {
       </div>
     </div>
     <a
-        href="https://wa.me"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img alt='whatsapp icon'  className="whatsapp" src={WhatsApp}/>
-      </a>
-    </>
+      href="https://wa.me"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img alt='whatsapp icon' className="whatsapp" src={WhatsApp} />
+    </a>
+  </>
   );
 }
