@@ -1,6 +1,8 @@
 import React from 'react';
 import './home.css';
-
+import Card from './cards';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import backgroundImage1 from '../assests/Background/backround1.png';
 import backgroundImage2 from '../assests/Background/backround2.png';
 import backgroundImage3 from '../assests/Background/backround3.png';
@@ -8,7 +10,61 @@ import backgroundImage4 from '../assests/Background/background4.png';
 import WhatsApp from '../assests/icons/whatsapp.png';
 
 export default function Home() {
-
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+  let cardData = [
+    {
+      imgSrc: "https://media2.thrillophilia.com/images/photos/000/035/746/original/chokra11.jpg?width=1600&height=775",
+      title: "Chokramudi",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam."
+    },
+    {
+      imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLbRUpYsuN4D-6F3fETvKgXhscFCBRVYH3eeVUz_g-g&s",
+      title: "Nethravathi",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam."
+    },
+    {
+      imgSrc: "https://miro.medium.com/v2/resize:fit:960/1*qrTIa_bv1UKf1zvp_o1weA.jpeg",
+      title: "Kudremukh",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam."
+    },
+    {
+      imgSrc: "https://media1.thrillophilia.com/filestore/r9p12pnhzrj7ugun4gwxt5p9hlm4_Kumara%20Parvatha%20-%20Backpackers%20united%202020-06.jpg",
+      title: "Kumara Parvatha",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam."
+    },
+    {
+      imgSrc: "https://cdn.tripuntold.com/media/photos/location/2018/10/03/33120f29-ddc3-4175-8e0a-5c16570aabbb.jpg",
+      title: "Brahmagiri",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam."
+    },
+    {
+      imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBaSUjz_I9ShO5kSoNBZmZH_owZKkQDUHX653_IpeujA&s",
+      title: "Banasura",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam."
+    },
+    {
+      imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzBh3gJEAsMzR2YFbHJWFV9jh3dUZ9zB9OgtiG0ceJPw&s",
+      title: "Harihar",
+      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in labore laudantium deserunt fugiat numquam."
+    }
+  ];
 
   return (<>
     <div className='home'>
@@ -46,19 +102,48 @@ export default function Home() {
                 </div>
                 <div className="milestone">
                   <span>300+</span>
-                  <p>Happy Adventurers</p>
+                  <p>Adventurers</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+
+
+        <section className="featured-section">
+          <h2 className="trek_title"> Treks & Destinations</h2>
+          <div style={{ padding: "4%" }}>
+            <Carousel
+              responsive={responsive}
+              autoPlay={true}
+              swipeable={true}
+              draggable={true}
+              showDots={true}
+              infinite={true}
+              partialVisible={false}
+             >
+              {cardData.map((card, index) => (
+                <Card
+                  key={index}
+                  imgSrc={card.imgSrc}
+                  title={card.title}
+                  description={card.description}
+                />
+              ))}
+            </Carousel>
+          </div>
+        </section>
+
+        {/* 
         <section className="featured-section">
           <h2 className='trek_title'> Treks & Destinations</h2>
           <div style={{padding:"4%", display:"flex", justifyContent:"space-between", flexWrap: "wrap"}}>
+          {cardData.map((card, index) => (
             <div className="card">
               <img
                 className="card__background"
-                src="https://media2.thrillophilia.com/images/photos/000/035/746/original/chokra11.jpg?width=1600&height=775"
+                src={cardData.imgSrc}
                 // src="https://i.imgur.com/QYWAcXk.jpeg"
                 alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
                 width="1920"
@@ -66,7 +151,7 @@ export default function Home() {
               />
               <div className="card__content | flow">
                 <div className="card__content--container | flow">
-                  <h2 className="card__title">Chokramudi</h2>
+                  <h2 className="card__title">{cardData.title}</h2>
                   <p className="card__description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
                     labore laudantium deserunt fugiat numquam.
@@ -76,7 +161,7 @@ export default function Home() {
               </div>
 
             </div>
-           
+             ))}
             <div className="card">
               <img
                 className="card__background"
@@ -120,7 +205,7 @@ export default function Home() {
             <div className="card">
               <img
                 className="card__background"
-                src="https://nomadsofindia.com/wp-content/uploads/2023/06/Kumara-Parvatha-Trek-1024x683.jpg"
+                src="https://media1.thrillophilia.com/filestore/r9p12pnhzrj7ugun4gwxt5p9hlm4_Kumara%20Parvatha%20-%20Backpackers%20united%202020-06.jpg"
                 alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
                 width="1920"
                 height="2193"
@@ -198,7 +283,7 @@ export default function Home() {
 
             </div>
           </div>
-        </section>
+        </section> */}
 
 
 
