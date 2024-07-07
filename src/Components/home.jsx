@@ -8,6 +8,7 @@ import backgroundImage2 from '../assests/Background/backround2.png';
 import backgroundImage3 from '../assests/Background/backround3.png';
 import backgroundImage4 from '../assests/Background/background4.png';
 import WhatsApp from '../assests/icons/whatsapp.png';
+import PhotoGrid from './photoGrid';
 
 export default function Home() {
   const responsive = {
@@ -74,15 +75,57 @@ export default function Home() {
           <img src={backgroundImage2} alt='image2' className="grass" />
           <img src={backgroundImage1} alt='image3' className="waterfall" />
           <img src={backgroundImage4} alt='image4' className="hero" />
-          <div style={{ width: "40%", marginLeft: "-40%", marginTop: "-6%" }}>
-            <h1 className='title'>Travel Experience with a positive impact . . .</h1>
-            <p className='subPara'>Embark on a journey through breathtaking landscapes, conquer rugged terrains,
+          <div className="glass-container" style={{ width: "40%", marginLeft: "-40%", marginTop: "-6%" }}>
+            <h1 className='title'>Travel Experience with a Positive Impact . . .</h1>
+            <p className='subPara'>
+              Embark on a journey through breathtaking landscapes, conquer rugged terrains,
               and immerse yourself in the serenity of nature. Trekking offers not just physical challenges,
               but also moments of profound connection with the world around us. Whether it's the crisp mountain air,
               the rustling of leaves in dense forests, or the majestic vistas that await at the summit,
-              every step of the trek is a step closer to discovering the beauty of our planet.</p>
+              every step of the trek is a step closer to discovering the beauty of our planet.
+            </p>
+            <div className="social-media-buttons">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="facebook-icon.png" alt="Facebook" />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="twitter-icon.png" alt="Twitter" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="instagram-icon.png" alt="Instagram" />
+              </a>
+            </div>
           </div>
+
         </header>
+
+        <section className="featured-section">
+          <h2 style={{ color: "black" }}> Treks & Destinations</h2>
+          <div style={{ padding: "4%" }}>
+            <Carousel
+              responsive={responsive}
+              autoPlay={true}
+              swipeable={true}
+              draggable={true}
+              showDots={true}
+              infinite={true}
+              partialVisible={false}
+            >
+              {cardData.map((card, index) => (
+                <Card
+                  key={index}
+                  imgSrc={card.imgSrc}
+                  title={card.title}
+                  description={card.description}
+                />
+              ))}
+            </Carousel>
+          </div>
+        </section>
+
+
+
+
 
         <section id='intro' className="intro-section">
           <div className='about-wrapper'>
@@ -108,33 +151,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-
-
-        <section className="featured-section">
-          <h2 className="trek_title"> Treks & Destinations</h2>
-          <div style={{ padding: "4%" }}>
-            <Carousel
-              responsive={responsive}
-              autoPlay={true}
-              swipeable={true}
-              draggable={true}
-              showDots={true}
-              infinite={true}
-              partialVisible={false}
-             >
-              {cardData.map((card, index) => (
-                <Card
-                  key={index}
-                  imgSrc={card.imgSrc}
-                  title={card.title}
-                  description={card.description}
-                />
-              ))}
-            </Carousel>
-          </div>
-        </section>
-
         {/* 
         <section className="featured-section">
           <h2 className='trek_title'> Treks & Destinations</h2>
@@ -289,35 +305,15 @@ export default function Home() {
 
 
 
-        {/* About Us */}
-        <section className="about-us">
-          {/* Add information about your adventure company here */}
-        </section>
+    
 
 
 
 
         <section className="photos">
-          <h2>Photo Gallery</h2>
-          <div className="photo-grid">
-            <div className="photo">
-              <img src="trek1.jpg" alt="Trekking Photo 1" />
-            </div>
-            <div className="photo">
-              <img src="trek2.jpg" alt="Trekking Photo 2" />
-            </div>
-            <div className="photo">
-              <img src="trek3.jpg" alt="Trekking Photo 3" />
-            </div>
-            <div className="photo">
-              <img src="trek3.jpg" alt="Trekking Photo 3" />
-            </div>
-            <div className="photo">
-              <img src="trek3.jpg" alt="Trekking Photo 3" />
-            </div>
-
-          </div>
+        <PhotoGrid/>
         </section>
+
 
 
         {/* Customer Reviews/Testimonials */}
@@ -335,7 +331,6 @@ export default function Home() {
               <span className="review-author">- Jane Smith</span>
             </div>
           </div>
-
         </section>
 
 

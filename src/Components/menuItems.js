@@ -19,6 +19,11 @@ export const MenuItems=[
         url:"#Contact",
         cName:"nav-links",
         icon:""
+    },{
+        title:"All Treks",
+        url:"#alltreks",
+        cName:"nav-links",
+        icon:""
     },
     ]
     
