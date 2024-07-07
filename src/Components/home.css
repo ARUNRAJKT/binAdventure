@@ -177,7 +177,11 @@ animation: spinner-pl92zb 1s infinite linear;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-
+.featured-heading{
+  display: flex;
+  justify-content: space-between;
+  margin: 4% 6% 0 6%;
+}
 .trek-card {
   width: 300px;
   height: 350px;

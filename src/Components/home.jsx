@@ -100,7 +100,10 @@ export default function Home() {
         </header>
 
         <section className="featured-section">
-          <h2 style={{ color: "black" }}> Treks & Destinations</h2>
+          <div className='featured-heading' >
+            <h2 style={{ color: "black" }}> Popular tresks</h2>
+            <a href=''>See more..</a>
+          </div>
           <div style={{ padding: "4%" }}>
             <Carousel
               responsive={responsive}
@@ -305,13 +308,13 @@ export default function Home() {
 
 
 
-    
+
 
 
 
 
         <section className="photos">
-        <PhotoGrid/>
+          <PhotoGrid />
         </section>
 
 
